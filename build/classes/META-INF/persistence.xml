@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="GestionMakroPU" transaction-type="RESOURCE_LOCAL">
+    <provider>oracle.toplink.essentials.PersistenceProvider</provider>
+    <class>persistenciaBD.Bloqueo</class>
+    <class>persistenciaBD.Articulo</class>
+    <class>persistenciaBD.Pedido</class>
+    <class>persistenciaBD.Reserva</class>
+    <class>persistenciaBD.Cliente</class>
+    <class>persistenciaBD.LineaVenta</class>
+    <class>persistenciaBD.TiposCliente</class>
+    <class>persistenciaBD.LineaReserva</class>
+    <class>persistenciaBD.Venta</class>
+    <class>persistenciaBD.Empleado</class>
+    <class>persistenciaBD.LineaPedido</class>
+    <class>persistenciaBD.Contacto</class>
+    <class>persistenciaBD.Comprador</class>
+    <class>persistenciaBD.Actividades</class>
+    <class>persistenciaBD.Proveedor</class>
+    <properties>
+      <property name="toplink.jdbc.user" value="genar"/>
+      <property name="toplink.jdbc.password" value="genar"/>
+      <property name="toplink.jdbc.url" value="jdbc:mysql://localhost/makroBD"/>
+      <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
